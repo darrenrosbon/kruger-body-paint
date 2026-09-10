@@ -4,9 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kruger Body &amp; Paint</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='5' y='5' width='54' height='54' rx='12' fill='%23E0603E'/%3E%3Crect x='19' y='17' width='6.5' height='30' rx='3' fill='%23121417'/%3E%3Crect x='28.75' y='17' width='6.5' height='30' rx='3' fill='%23121417'/%3E%3Crect x='38.5' y='17' width='6.5' height='30' rx='3' fill='%23121417'/%3E%3C/svg%3E">
 <meta name="description" content="Collision, structural and refinish work in Johannesburg since 1984. SAMBRA accredited, measured to factory datum, lifetime refinish warranty.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1591278169757-deac26e49555?auto=format&fit=crop&w=2000&q=68" fetchpriority="high">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=JetBrains+Mono:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400..600&display=swap">
 
 <style>
@@ -92,7 +95,8 @@ img{max-width:100%}
   display:flex;align-items:center;justify-content:space-between;gap:16px;
   flex-wrap:wrap;padding-top:14px;padding-bottom:14px;
 }
-.mark{display:flex;align-items:baseline;gap:11px}
+.mark{display:flex;align-items:center;gap:10px}
+.mark-icon{width:26px;height:26px;flex:none}
 .mark .k{font-family:Archivo,sans-serif;font-variation-settings:"wdth" 122,"wght" 800;text-transform:uppercase;font-size:19px}
 .mark .est{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.14em;color:var(--ink-3);text-transform:uppercase}
 .bar nav{display:flex;gap:22px;flex-wrap:wrap}
@@ -116,7 +120,7 @@ img{max-width:100%}
 .hero{position:relative;overflow:hidden}
 .himg{
   position:absolute;inset:0;
-  background-image:url("https://images.unsplash.com/photo-1591278169757-deac26e49555?auto=format&fit=crop&w=2400&q=80");
+  background-image:url("https://images.unsplash.com/photo-1591278169757-deac26e49555?auto=format&fit=crop&w=2000&q=68");
   background-size:cover;background-position:center 38%;
   filter:saturate(.92) contrast(1.08);
 }
@@ -224,7 +228,7 @@ tbody tr:hover{background:var(--panel-2)}
 .band{background:#0E0C0B;color:#F7F5F1;padding:76px 0;position:relative;overflow:hidden}
 .band .bimg{
   position:absolute;inset:0;
-  background-image:url("https://images.unsplash.com/photo-1618312980096-873bd19759a0?auto=format&fit=crop&w=2000&q=80");
+  background-image:url("https://images.unsplash.com/photo-1618312980096-873bd19759a0?auto=format&fit=crop&w=1800&q=68");
   background-size:cover;background-position:center 28%;
   filter:saturate(.9) contrast(1.08);
 }
@@ -361,6 +365,12 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px}
 <header class="bar" id="bar">
   <div class="wrap">
     <div class="mark">
+      <svg class="mark-icon" viewBox="0 0 64 64" aria-hidden="true">
+        <rect x="5" y="5" width="54" height="54" rx="12" fill="#E0603E"/>
+        <rect x="19" y="17" width="6.5" height="30" rx="3" fill="#121417"/>
+        <rect x="28.75" y="17" width="6.5" height="30" rx="3" fill="#121417"/>
+        <rect x="38.5" y="17" width="6.5" height="30" rx="3" fill="#121417"/>
+      </svg>
       <span class="k">Kruger Body &amp; Paint</span>
       <span class="est">Est. 1984 · Johannesburg</span>
     </div>
@@ -538,7 +548,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px}
     </div>
     <div class="team">
       <article>
-        <img class="photo" src="https://images.unsplash.com/photo-1632067694881-a75210e65e88?auto=format&amp;fit=crop&amp;w=800&amp;q=75" alt="Portrait of Pieter Kruger in the workshop" loading="lazy">
+        <img class="photo" src="https://images.unsplash.com/photo-1632067694881-a75210e65e88?auto=format&amp;fit=crop&amp;w=640&amp;q=70" width="640" height="640" alt="Portrait of Pieter Kruger in the workshop" loading="lazy">
         <div class="body">
           <h3>Pieter Kruger</h3>
           <div class="role">Owner · Structural tech</div>
@@ -547,7 +557,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px}
         </div>
       </article>
       <article>
-        <img class="photo" src="https://images.unsplash.com/photo-1747249044839-7b81af67d206?auto=format&amp;fit=crop&amp;w=800&amp;q=75" alt="Portrait of Nomvula Dlamini working on a vehicle" loading="lazy">
+        <img class="photo" src="https://images.unsplash.com/photo-1747249044839-7b81af67d206?auto=format&amp;fit=crop&amp;w=640&amp;q=70" width="640" height="640" alt="Portrait of Nomvula Dlamini working on a vehicle" loading="lazy">
         <div class="body">
           <h3>Nomvula Dlamini</h3>
           <div class="role">Lead refinish tech</div>
@@ -556,7 +566,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px}
         </div>
       </article>
       <article>
-        <img class="photo" src="https://images.unsplash.com/photo-1610259998914-d1b9afe0dc55?auto=format&amp;fit=crop&amp;w=800&amp;q=75" alt="Portrait of Riyaad Adams in the workshop" loading="lazy">
+        <img class="photo" src="https://images.unsplash.com/photo-1610259998914-d1b9afe0dc55?auto=format&amp;fit=crop&amp;w=640&amp;q=70" width="640" height="640" alt="Portrait of Riyaad Adams in the workshop" loading="lazy">
         <div class="body">
           <h3>Riyaad Adams</h3>
           <div class="role">Estimator · ADAS calibration</div>
@@ -577,21 +587,21 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px}
       <div class="rev">
         <blockquote>“The insurer wanted an aftermarket bumper and a spot repair. Riyaad printed the OEM procedure, sent it over, and they approved the proper job the same afternoon. I didn't have to argue with anyone.”</blockquote>
         <div class="who">
-          <img class="avatar" src="https://images.unsplash.com/photo-1710196598824-ca4ca5fefae4?auto=format&amp;fit=crop&amp;w=200&amp;q=70" alt="" loading="lazy">
+          <img class="avatar" src="https://images.unsplash.com/photo-1710196598824-ca4ca5fefae4?auto=format&amp;fit=crop&amp;w=100&amp;q=68" width="100" height="100" alt="" loading="lazy">
           <div class="who-text"><b>Palesa Mahlangu</b>2022 VW Polo · rear quarter · OUTsurance</div>
         </div>
       </div>
       <div class="rev">
         <blockquote>“White on a nine-year-old Hilux. I fully expected to see the repaired door from across the yard. You cannot find it, and I have looked.”</blockquote>
         <div class="who">
-          <img class="avatar" src="https://images.unsplash.com/photo-1592234789031-94bf65f630ed?auto=format&amp;fit=crop&amp;w=200&amp;q=70" alt="" loading="lazy">
+          <img class="avatar" src="https://images.unsplash.com/photo-1592234789031-94bf65f630ed?auto=format&amp;fit=crop&amp;w=100&amp;q=68" width="100" height="100" alt="" loading="lazy">
           <div class="who-text"><b>Werner Botha</b>2017 Toyota Hilux · Super White II · out of pocket</div>
         </div>
       </div>
       <div class="rev">
         <blockquote>“Texted me photos at every stage without me asking, including the frame measurements before and after. First body shop that ever showed me the numbers.”</blockquote>
         <div class="who">
-          <img class="avatar" src="https://images.unsplash.com/photo-1590496467074-c4d437a179e7?auto=format&amp;fit=crop&amp;w=200&amp;q=70" alt="" loading="lazy">
+          <img class="avatar" src="https://images.unsplash.com/photo-1590496467074-c4d437a179e7?auto=format&amp;fit=crop&amp;w=100&amp;q=68" width="100" height="100" alt="" loading="lazy">
           <div class="who-text"><b>Ayesha Patel</b>2021 Ford Ranger · structural · Discovery Insure</div>
         </div>
       </div>
